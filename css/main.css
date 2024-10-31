@@ -1,0 +1,902 @@
+@font-face {
+    font-family: "Raleway";
+    src:url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "HankenGrotesk";
+    src:url("../fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+body{
+    background: #F4F4F4;
+}
+body,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    color: #2A2A2A;
+}
+div,input,button    {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.d-flex{
+    display: flex;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+.j-spc-btw{
+    justify-content: space-between;
+}
+.j-end{
+    justify-content: flex-end;
+}
+.a-center{
+    align-items: center;
+}
+.j-center{
+    justify-content: center;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 20px 70px;
+}
+.btn{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.mobile-menu{
+    width: 30px;
+    height: 8px;
+    background: url('../images/mobile-menu.svg') no-repeat;
+    display: none;
+}
+.menu{
+    gap: 20px;
+}
+.menu-link{
+    color: #2A2A2A;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: "Raleway",sans-serif;
+}
+.nav-right{
+    gap: 40px;
+}
+.header-contacts{
+    gap: 6px;
+}
+.header-contacts a{
+    color: #2A2A2A;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: "Raleway",sans-serif;
+    gap: 5px;
+}
+.banner{
+    padding: 15px 70px 80px;
+}
+.pagination-item a, .pagination-item{
+    color: #2A2A2A;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Raleway",sans-serif;
+}
+.pagination{
+    margin-bottom: 20px;
+}
+
+.banner-bg{
+    height: 350px;
+    width: 100%;
+    border-radius: 8px;
+    background: url('../images/banner.png') no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    gap: 16px;
+}
+.city-bg{
+    background: url('../images/city-bg.png') no-repeat;
+
+}
+.banner-title{
+    color: #F4F4F4;
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: 400;
+    font-family: "Raleway",sans-serif;
+    max-width: 750px;
+}
+.banner-link{
+    color: #FF8B36;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: "Raleway",sans-serif;
+    gap: 6px;
+}
+.search{
+    padding: 8px 78px;
+}
+.search-result{
+    padding: 0 78px;
+    margin-bottom: 80px;
+}
+.search-form{
+    background: #2A2A2A;
+    padding: 8px;
+}
+.lang-select{
+    width: 64px;
+    height: 26px;
+    color: #404040;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-bottom: 9px;
+    border: none;
+}
+.search-desc{
+    color: #F4F4F4;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: 'Helvetica',sans-serif;
+    margin-bottom: 14px;
+}
+.search-form form{
+    width: 100%;
+   flex-wrap: wrap;
+
+}
+.text-input, .text-input:disabled{
+    width: 308px;
+    height: 34px;
+    padding: 8px 8px 8px 31px;
+    color: #BAB6B6;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    font-family: 'Helvetica',sans-serif;
+    margin-right: 8.4px;
+    background: #FFFFFF;
+    border: none;
+    margin-bottom: 8px;
+}
+#datepicker, .adult-info{
+    width: 208px;
+    height: 34px;
+    padding: 8px 8px 8px 31px;
+    color: #BAB6B6;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    font-family: 'Helvetica',sans-serif;
+    background: #FFFFFF;
+    border: none;
+    margin-bottom: 8px;
+
+}
+#datepicker{
+    border-right: 1px solid #F4F4F4;
+    color: #404040;
+}
+.adult-info{
+    text-align: center;
+}
+button[data-decrease]{
+    position: absolute;
+    background: none;
+    border: none;
+    color: #404040;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    font-family: 'Helvetica', sans-serif;
+    left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    cursor: pointer;
+}
+button[data-increase]{
+    position: absolute;
+    background: none;
+    border: none;
+    color: #404040;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    font-family: 'Helvetica', sans-serif;
+    right: 57px;
+    display: flex;
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    top: 0;
+}
+.form-actions{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-orange{
+    background: #FF8B36;
+    padding: 8px;
+    min-height: 32px;
+    color: #F4F4F4;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    font-family: 'Helvetica',sans-serif;
+    border: none;
+    width: 122px;
+    cursor:pointer;
+}
+.adult-info{
+    margin-right: 8.4px;
+}
+.mr-0{
+    margin-right: 0;
+}
+.search-item{
+    background: #2A2A2A;
+    padding: 8px;
+    margin-bottom: 8px;
+    gap: 8px;
+}
+
+.search-item-img{
+    max-width: 484px;
+    width: 100%;
+}
+.search-item-img img{
+    height: 100%;
+}
+.search-item-info{
+    padding-top: 27px;
+    padding-bottom: 27px;
+    max-width: calc(100% - 492px);
+    width: 100%;
+}
+.search-item-info h1{
+    color: #F4F4F4;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'Helvetica',sans-serif;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-icon{
+    width: 17px;
+    height: 22px;
+    background: url('../images/arrow-white.svg') no-repeat center;
+    display: flex;
+
+}
+.search-item-info p{
+    color: #BAB6B6;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: 'Helvetica',sans-serif;
+    margin-bottom: 4px;
+
+}
+.search-item-action{
+    width: 100%;
+    padding-right: 79px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.search-item-action h4{
+    color: #F4F4F4;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: 'Helvetica',sans-serif;
+    margin-bottom: 4px;
+}
+.search-item-action .btn-orange{
+    height: 42px;
+    font-size: 11px;
+    line-height: 12px;
+}
+.search-item-adults{
+    gap: 3px;
+    margin-bottom: 14px;
+}
+.search-item-user-count{
+    color: #BAB6B6;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: 'Helvetica',sans-serif;
+    padding-left: 14px;
+    position: relative;
+    background: url('../images/person.svg') no-repeat center left;
+    margin-right: 5px;
+}
+.wc-icon{
+    color: #BAB6B6;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: 'Helvetica',sans-serif;
+    padding-left: 14px;
+    background: url('../images/wc.svg') no-repeat center left;
+}
+.pets-icon{
+    color: #BAB6B6;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: 'Helvetica',sans-serif;
+    padding-left: 14px;
+    background: url('../images/pets.svg') no-repeat center left;
+}
+.smoking-icon{
+    color: #BAB6B6;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: 'Helvetica',sans-serif;
+    padding-left: 14px;
+    background: url('../images/smoking_rooms.svg') no-repeat center left;
+}
+.map-icon{
+    background: url('../images/map.svg') no-repeat;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 19px;
+    height: 32px;
+}
+.datepicker-icon{
+    background: url('../images/datepicker.svg') no-repeat;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 19px;
+    height: 32px;
+}
+.calendar-icon{
+    background: url('../images/calendar.svg') no-repeat;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 19px;
+    height: 32px;
+}
+.user-icon{
+    background: url('../images/adult.svg') no-repeat;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 19px;
+    height: 32px;
+}
+.form-col{
+    position: relative;
+}
+
+footer{
+    margin-top: 80px;
+    padding: 0 70px 60px;
+}
+
+.footer-top{
+    padding-top: 60px;
+    border-top: 1px solid #CCC3C3;
+
+    gap: 37px;
+    margin-bottom: 49px;
+
+}
+.footer-title{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+}
+.footer-menu-item a{
+    color: #2A2A2A;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+.footer-col{
+    width: calc(100%/4);
+}
+.payment-methods{
+    gap: 14px;
+}
+.payment-methods img{
+    margin-right: 14px;
+    margin-bottom: 13px;
+}
+.footer-tel{
+    width: 100%;
+    display: flex;
+    color: #2A2A2A;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+
+}
+.footer-email{
+    width: 100%;
+    display: flex;
+    color: #2A2A2A;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+
+}
+.socials{
+    margin-top: 5px;
+    gap: 10px;
+}
+.footer-col h6{
+    color: #2A2A2A;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+.footer-col p{
+    color: #CCC3C3;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+.footer-bottom{
+    border-bottom: 1px solid #CCC3C3;
+    padding-bottom: 50px;
+    gap: 37px;
+}
+.copyright{
+    padding-top: 50px;
+}
+.copyright p, .copyright a{
+    color: #CCC3C3;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+
+}
+.airport{
+    padding: 80px 70px;
+}
+.airport-info{
+    gap: 60px;
+    margin-bottom: 160px;
+}
+.airport-info:last-child{
+    margin-bottom: 32px;
+}
+.airport-info-left{
+    width: 100%;
+}
+.airport-info-right{
+    width: 100%;
+}
+.airport-info h1{
+    color: #2A2A2A;
+    font-size: 37px;
+    line-height: 45px;
+    font-weight: 400;
+    font-family: "HankenGrotesk", sans-serif;
+    margin-bottom: 5px;
+}
+.airport-info p{
+    color: #6A6A6A;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+}
+.airport-info h2{
+    color: #2A2A2A;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "HankenGrotesk", sans-serif;
+    margin-bottom: 15px;
+}
+.gallery{
+    padding: 0 70px;
+    margin-bottom: 80px;
+}
+.gallery h1{
+    font-size: 37px;
+    line-height: 45px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #2A2A2A;
+    font-family: "HankenGrotesk", sans-serif;
+
+}
+.gallery p{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #808080;
+    margin-bottom: 64px;
+    font-family: "Raleway",sans-serif;
+
+}
+.gallery-row{
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.gallery-item-large{
+    max-width: 733px;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.gallery-item{
+    max-width: calc(100% - 749px);
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.gallery-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.gallery-item-large img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.gallery-title{
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+}
+.text-dark{
+    color: #2A2A2A;
+}
+.ceo-info{
+    gap: 60px;
+}
+.ceo-info div{
+    width: 100%;
+}
+.ceo{
+    padding: 0 70px 80px;
+}
+.ceo h1{
+    color: #2A2A2A;
+    font-size: 37px;
+    line-height: 45px;
+    font-weight: 400;
+    font-family: "HankenGrotesk", sans-serif;
+}
+.ceo p{
+    color: #6A6A6A;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+.contact-us{
+    padding: 104px 70px 0;
+}
+.contact-content{
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+.contact-content h1{
+    color: #2A2A2A;
+    font-size: 37px;
+    line-height: 45px;
+    font-weight: 400;
+    font-family: "HankenGrotesk", sans-serif;
+    margin-bottom: 24px;
+}
+.contact-content > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.contact-content h4{
+    color: #2A2A2A;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+}
+.contact-content p{
+    color: #6A6A6A;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+}
+.contact-content a{
+    color: #2A2A2A;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.contact-actions{
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 35px;
+}
+.contact-action-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contact-action-btns .btn-orange{
+    width: 200px;
+    height: 45px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.contact-action-btns .btn-orange-outline{
+    width: 160px;
+    height: 47px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    color: #2A2A2A;
+    border: 1px solid #FF8B36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.airport-city .airport-city-title{
+    margin-bottom: 35px;
+}
+.airport-city{
+    padding-bottom: 120px;
+}
+.faq-not-found{
+    background: #DDDDDD;
+    padding: 10px;
+    width: 100%;
+    color: #2A2A2A;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: Raleway, sans-serif;
+    margin-top: 54px;
+}
+.faq{
+    padding: 80px 70px 0;
+}
+.faq-title{
+    font-size: 37px;
+    line-height: 45px;
+    font-weight: 400;
+    font-family: HankenGrotesk, sans-serif;
+    color: #2A2A2A;
+}
+.tabs{
+    padding: 80px 70px 90px;
+
+}
+.tabs-title{
+    color: #2A2A2A;
+    font-size: 37px;
+    line-height: 45px;
+    font-weight: 400;
+    font-family: HankenGrotesk, sans-serif;
+    margin-bottom: 40px;
+}
+.tabs-left{
+    width: 280px;
+
+}
+.tabs-block{
+    gap: 50px;
+}
+.tabs-right{
+    width: calc(100% - 330px);
+}
+.tab-item{
+    padding: 20px 27px;
+    color: #222222;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: Raleway, sans-serif;
+    cursor: pointer
+}
+.tab-item.active{
+    background: #fff;
+    border-left: 2px solid #FF8B36
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active{
+    display: block;
+}
+.tab-content img{
+    margin-bottom: 20px;
+}
+.tab-content h4{
+    color: #2A2A2A;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: Raleway, sans-serif;
+    margin-bottom: 10px;
+}
+.tab-content p{
+    color: #2A2A2A;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: Raleway, sans-serif;
+    margin-bottom: 10px;
+}
+
+.city-from-banner{
+    padding: 120px 70px 0;
+}
+.airport-city .airport-info-left h1{
+    color: #FF8B36;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.city .airport-city .airport-info-left h1{
+    color: #2A2A2A;
+}
+.airport-city .city-from .airport-city-title{
+    margin-bottom: 15px;
+}
+.ceo-city h1{
+    margin-bottom: 10px;
+}
+.ceo-city p{
+    margin-bottom: 52px;
+}
+.ceo-city .btn-orange{
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.ceo-city{
+    padding-bottom: 160px;
+}
+.to-city{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.city-to-banner{
+    padding: 0 70px;
+}
+.airport-to-city{
+    padding-top: 40px;
+}
+.text-orange{
+    color: #FF8B36;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Raleway, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 47px;
+}
+.airport-city.airport-to-city .airport-city-title{
+    margin-bottom: 30px;
+}
+.city-to-banner h1{
+    color: #2A2A2A;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 45px;
+    font-family: HankenGrotesk, sans-serif;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+.airport-city.airport-city-to-city .airport-city-title{
+    margin-bottom: 15px;
+}
+.airport-city.airport-city-to-city  h4{
+    margin-bottom: 10px;
+}
+.pb-0{
+    padding-bottom: 0;
+}
+.airport-info-right div p{
+    width: 50%;
+}
+.airport-info-right div h2{
+    width: 50%;
+}
+.text-help{
+    max-width: 184px;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: Helvetica, sans-serif;
+    color: #BAB6B6;
+    text-align: center;
+    margin-top: 14px;
+}
+.text-center{
+    text-align: center;
+}
+.airport-info h2.text-orange{
+    color: #FF8B36;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    margin-top: 15px;
+}
+.country .ceo-info{
+    padding-top: 80px;
+}
+.tcityt .text-orange{
+    margin-top: 0;
+}

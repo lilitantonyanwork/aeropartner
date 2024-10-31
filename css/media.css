@@ -1,0 +1,377 @@
+@media screen and (max-width: 1300px){
+    .header-logo img{
+        max-width: 300px;
+    }
+    .header-logo{
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1200px){
+    header, .banner , .search, .search-result, .airport, .gallery,.ceo, .contact-us, footer,.tabs, .faq,
+    .city-to-banner, .city-from-banner{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .faq{
+        margin-bottom: 120px;
+    }
+    .header-logo img{
+        max-width: 220px;
+    }
+    .menu-link{
+        font-size: 14px;
+    }
+
+    .gallery-item-large{
+        max-width: 600px;
+    }
+    .gallery-item{
+        max-width: calc(100% - 616px);
+    }
+    .airport{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .airport-info{
+        margin-bottom: 80px;
+    }
+    .contact-us{
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    .header-contacts a{
+        font-size: 14px;
+
+    }
+    .nav-right{
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 990px){
+    .nav-right{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+    }
+    .nav-right{
+        position: absolute;
+        width: 100%;
+        background: #F4F4F4;
+        top: 54px;
+        left: 0;
+        padding: 30px;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .header-contacts{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .search-item{
+        flex-direction: column;
+    }
+    .search-item-info{
+        max-width: 100%;
+    }
+    .search-result{
+        margin-bottom: 23px;
+    }
+    .airport-info h1, .ceo h1, .contact-content h1{
+        font-size: 25px;
+        line-height: 27px;
+    }
+    .airport-info p, .ceo p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .gallery h1{
+        font-size: 25px;
+        line-height: 27px;
+    }
+    .gallery p{
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 30px;
+    }
+    .gallery-row{
+        flex-direction: column;
+    }
+    .gallery-item{
+        max-width: 100%;
+    }
+    .gallery-item-large{
+        max-width: 100%;
+    }
+    .banner-title{
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 31px;
+    }
+}
+@media screen and (max-width: 768px){
+    .airport-info{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .ceo-info{
+        flex-direction: column;
+    }
+    .footer-top{
+        flex-wrap: wrap;
+    }
+    .footer-bottom{
+        flex-wrap: wrap;
+    }
+    .footer-col{
+        width: calc(100%/2 - 37px);
+    }
+    .banner{
+        padding-bottom: 50px;
+    }
+    .text-input, .text-input:disabled{
+        width: 317px;
+    }
+    #datepicker, .adult-info{
+        width: 317px;
+    }
+    .form-col{
+        width: 317px;
+    }
+    .search-form form{
+        gap: 8px;
+        justify-content: space-between;
+    }
+    .search-item-action{
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 0;
+    }
+    .search-item-info{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .airport-info-left img{
+        display: none;
+    }
+    .gallery-row{
+        gap: 50px;
+    }
+    .ceo-info{
+        gap: 30px;
+    }
+    .contact-content h4{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .text-center{
+        text-align: left;
+    }
+    .tabs-block{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .tabs-left{
+        width: 100%;
+    }
+    .tabs-left ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tab-item{
+        font-size: 12px;
+        line-height: 18px;
+        padding: 16px 9px 18px;
+    }
+    .tab-item.active{
+        border-left: 0;
+        border-bottom: 2px solid #FF8B36;
+    }
+    .tabs-right{
+        width: 100%;
+    }
+    .faq-title{
+        font-size: 25px;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+    .faq-not-found{
+        margin-top: 0;
+    }
+    .tabs-title{
+        font-size: 25px;
+        line-height: 27px;
+        margin-bottom: 31px;
+    }
+
+    .tab-content h4{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .tab-content p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .tabs{
+        padding-bottom: 60px;
+    }
+    .city-to-banner h1{
+        font-size: 25px;
+        line-height: 27px;
+    }
+}
+@media screen and (max-width: 600px){
+    .footer-col{
+        width: 100%;
+    }
+    .footer-top{
+        gap: 35px;
+        margin-bottom: 35px;
+        padding-top: 50px;
+    }
+    .footer-bottom{
+
+        padding-bottom: 50px;
+    }
+    .copyright{
+        padding-top: 35px;
+    }
+    footer{
+        padding-bottom: 20px;
+    }
+    header, .banner, .search, .search-result, .airport, .gallery, .ceo, .contact-us, footer,
+    .city-to-banner, .tabs, faq, .city-from-banner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .pagination-item a, .pagination-item{
+        font-size: 12px;
+        line-height: 16px;
+        display: contents;
+    }
+    .pagination-item:last-child{
+        width: 134px;
+    }
+    .banner-bg{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ceo-city p{
+        margin-bottom: 10px;
+    }
+    .ceo-city{
+        padding-bottom: 90px;
+    }
+    .search-item-info p{
+        max-width: 100%;
+        margin-bottom: 0;
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .search-item-info h1{
+        flex-wrap: wrap;
+    }
+
+    .city-to-banner h1{
+        margin-top: 30px;
+        margin-bottom: 71px;
+    }
+    .city-to-banner img{
+        height: 400px;
+        object-fit: cover;
+    }
+
+}
+@media screen and (max-width: 480px){
+    .search-price{
+        justify-content: flex-start;
+        margin-left: -8px;
+
+    }
+    .search-item-action .btn-orange{
+        width: 100%;
+    }
+    .search-item-action{
+        padding-right: 0;
+    }
+     .banner-title{
+        display: flex;
+        flex-direction: column;
+    }
+     .banner-title span{
+        display: flex;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .ctc .to-city{
+        padding-top: 40px;
+    }
+    .tabs{
+        padding-top: 50px;
+    }
+    .ceo-info img{
+        height: 400px;
+    }
+    #datepicker, .adult-info, .form-col, .text-input, .text-input:disabled {
+        width: 100%;
+    }
+    .search-result, .search{
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    .ct .tabs{
+        padding-bottom: 10px;
+    }
+    .ct .to-city{
+        padding-bottom: 0;
+    }
+    .ct .airport{
+        padding-top: 10px;
+    }
+    .ct .airport-city.airport-to-city .airport-city-title{
+        margin-bottom: 25px;
+    }
+    .ct .airport-info-left h2:not(:first-child){
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+    .fc .to-city{
+        padding-top: 40px;
+    }
+    .country .ceo-info{
+        padding-top: 40px;
+    }
+    .country .ceo{
+        padding-bottom: 50px;
+    }
+    .tcityt .gallery{
+        padding-top: 40px;
+    }
+
+    .fcity .ceo{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .city-from-banner{
+        padding-top: 70px;
+    }
+    .city-from-banner img{
+        height: 400px;
+        object-fit: cover;
+    }
+    .city .ceo{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .city .airport{
+        padding-top: 0;
+    }
+    .city .airport-city .airport-info-left h1{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}

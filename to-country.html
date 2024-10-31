@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Airport</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<header>
+    <nav class="d-flex j-spc-btw">
+        <div class="nav-left d-flex a-center">
+            <a href="index.html" class="header-logo">
+                <img src="images/logo.svg" alt="logo">
+            </a>
+        </div>
+        <div class="nav-right d-flex a-center">
+            <ul class="menu d-flex a-center">
+                <li class="menu-item">
+                    <a href="" class="menu-link">Private Jet Charter</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">Private Jets for Sale</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">Concierge</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">About</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">Blog</a>
+                </li>
+            </ul>
+            <div class="header-contacts d-flex a-center ">
+                <a href=""  class="d-flex a-center"><img src="images/whatsapp.svg" alt="whatsapp"></a>
+                <a href=""  class="d-flex a-center"><img src="images/email.svg" alt="email"></a>
+                <a href="tel:+971 800 0311 01 13" class="d-flex a-center"><img src="images/tel.svg" alt="tel">+971 800 0311 01 13</a>
+            </div>
+        </div>
+        <button class="btn mobile-menu "></button>
+    </nav>
+</header>
+<main class="ct">
+    <section class="banner">
+        <ul class="pagination d-flex a-center">
+            <li class="pagination-item d-flex a-center"><a href="#">Aeropartner</a><img src="images/pagination-arrow.svg" alt="arrow"></li>
+            <li class="pagination-item d-flex a-center"><a href="#">Charter Charter</a><img src="images/pagination-arrow.svg" alt="arrow"></li>
+            <li class="pagination-item d-flex a-center  ">Your Trip From</li>
+        </ul>
+        <div class="banner-bg city-bg">
+            <h1 class="banner-title">Book a private jet from
+               <span>France</span> </h1>
+            <a href="" class="banner-link d-flex a-center">Contact via WhatsApp <img src="images/banner-arrow.svg" alt="arrow"></a>
+
+        </div>
+    </section>
+    <section class="search">
+        <div class="search-form">
+            <div class="search-price d-flex j-end">
+                <select class="lang-select">
+                    <option value="eur" selected>EUR</option>
+                    <option value="usd">USD</option>
+                </select>
+
+            </div>
+            <div class="search-desc">
+                An empty leg, also called a ferry flight or an empty flight, is a private jet flying without passengers. This happens when an aircraft drops off passengers at their destination and returns home "empty", or
+                when it flies "empty" to pick up passengers at another airport.
+            </div>
+            <form action="" class="d-flex">
+                <div class="form-col">
+                    <span class="map-icon"></span>
+                    <input type="text" placeholder="From" class="text-input">
+                </div>
+                <div class="form-col">
+                    <span class="map-icon"></span>
+                    <input type="text" placeholder="to"  class="text-input">
+                </div>
+                <div class="form-col">
+                    <span class="datepicker-icon"></span>
+                    <input type="text" id="datepicker">
+                </div>
+                <div class="form-col">
+                    <span class="calendar-icon"></span>
+                    <button data-decrease>-</button>
+                    <input data-value  type="text" placeholder="0" class="adult-info" disabled>
+                    <button data-increase>+</button>
+                </div>
+                <div class="form-col">
+                    <span class="user-icon"></span>
+                    <button data-decrease>-</button>
+                    <input data-value type="number" placeholder="2" value="2" class="adult-info mr-0" disabled>
+                    <button data-increase>+</button>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-orange">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="search-result">
+        <div class="search-item d-flex">
+            <div class="search-item-img">
+                <img src="images/fly1.png" alt="fly1">
+            </div>
+            <div class="search-item-info">
+                <h1>Istanbul - Ataturk, TR (ISL) <span class="arrow-icon"></span> Cairo Intl, EG (CAI)</h1>
+                <p>Available: 2024-10-19 to 2024-10-24</p>
+                <div class="search-item-action d-flex j-spc-btw">
+                    <div>
+                        <h4>Citation Sovereign</h4>
+                        <p>2009</p>
+                        <div class="search-item-adults d-flex">
+                            <span class="search-item-user-count">10</span>
+                            <span class="wc-icon"></span>
+                            <span class="pets-icon"></span>
+                            <span class="smoking-icon"></span>
+                        </div>
+                        <p>Est. flight time:</p>
+                        <p>ISL - CAI <span>02:09</span></p>
+                    </div>
+                    <div>
+                        <button class="btn btn-orange">Inqu <br> ire</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="search-item d-flex">
+            <div class="search-item-img">
+                <img src="images/fly2.png" alt="fly1">
+            </div>
+            <div class="search-item-info">
+                <h1>Istanbul - Ataturk, TR (ISL) <span class="arrow-icon"></span> Cairo Intl, EG (CAI)</h1>
+                <p>Available: 2024-10-19 to 2024-10-24</p>
+                <div class="search-item-action d-flex j-spc-btw">
+                    <div>
+                        <h4>Citation Sovereign</h4>
+                        <p>2009</p>
+                        <div class="search-item-adults d-flex">
+                            <span class="search-item-user-count">10</span>
+                            <span class="uni-icon"></span>
+                            <span class="pets-icon"></span>
+                            <span class="smoking-icon"></span>
+                        </div>
+                        <p>Est. flight time:</p>
+                        <p>ISL - CAI <span>02:09</span></p>
+                    </div>
+                    <div>
+                        <button class="btn btn-orange">Inqu <br> ire</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="search-item d-flex">
+            <div class="search-item-img">
+                <img src="images/fly3.png" alt="fly1">
+            </div>
+            <div class="search-item-info">
+                <h1>Istanbul - Ataturk, TR (ISL) <span class="arrow-icon"></span> Cairo Intl, EG (CAI)</h1>
+                <p>Available: 2024-10-19 to 2024-10-24</p>
+                <div class="search-item-action d-flex j-spc-btw">
+                    <div>
+                        <h4>Citation Sovereign</h4>
+                        <p>2009</p>
+                        <div class="search-item-adults d-flex">
+                            <span class="search-item-user-count">10</span>
+                            <span class="uni-icon"></span>
+                            <span class="pets-icon"></span>
+                            <span class="smoking-icon"></span>
+                        </div>
+                        <p>Est. flight time:</p>
+                        <p>ISL - CAI <span>02:09</span></p>
+                    </div>
+                    <div>
+                        <button class="btn btn-orange">Inqu <br> ire</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="tabs">
+        <h1 class="tabs-title">Jet Guide</h1>
+        <div class="tabs-block d-flex">
+            <div class="tabs-left">
+                <ul>
+                    <li  class="tab-item active">Small</li>
+                    <li class="tab-item">Midsize</li>
+                    <li class="tab-item">Super Midsize</li>
+                    <li class="tab-item">Large Cabin</li>
+                    <li class="tab-item">Ultra Long Range</li>
+                </ul>
+            </div>
+            <div class="tabs-right">
+                <div class="tab-content active">
+                    <img src="images/tab-img.png" alt="tab">
+                    <h4>Super Midsize</h4>
+                    <p>Super midsize private jets are business aircraft known for spacious cabins, impressive range, and advanced avionics. Typically
+                        accommodating 8 to 12 passengers, they balance the large cabin space of heavy jets with the efficiency of midsize models. Luxurious
+                        amenities include full lavatories, Wi-Fi, and comfortable seating. With ranges up to 4,000 nautical miles, they can fly nonstop between major
+                        cities, ideal for transcontinental and international travel.</p>
+                    <h4>Aeropartner’s Super Midsize fleet</h4>
+                </div>
+                <div class="tab-content ">
+                    <img src="images/tab-img.png" alt="tab">
+                    <h4>Super Midsize</h4>
+                    <p>Super midsize private jets are business aircraft known for spacious cabins, impressive range, and advanced avionics. Typically
+                        accommodating 8 to 12 passengers, they balance the large cabin space of heavy jets with the efficiency of midsize models. Luxurious
+                        amenities include full lavatories, Wi-Fi, and comfortable seating. With ranges up to 4,000 nautical miles, they can fly nonstop between major
+                        cities, ideal for transcontinental and international travel.</p>
+                    <h4>Aeropartner’s Super Midsize fleet</h4>
+                </div>
+                <div class="tab-content ">
+                    <img src="images/tab-img.png" alt="tab">
+                    <h4>Super Midsize</h4>
+                    <p>Super midsize private jets are business aircraft known for spacious cabins, impressive range, and advanced avionics. Typically
+                        accommodating 8 to 12 passengers, they balance the large cabin space of heavy jets with the efficiency of midsize models. Luxurious
+                        amenities include full lavatories, Wi-Fi, and comfortable seating. With ranges up to 4,000 nautical miles, they can fly nonstop between major
+                        cities, ideal for transcontinental and international travel.</p>
+                    <h4>Aeropartner’s Super Midsize fleet</h4>
+                </div>
+                <div class="tab-content ">
+                    <img src="images/tab-img.png" alt="tab">
+                    <h4>Super Midsize</h4>
+                    <p>Super midsize private jets are business aircraft known for spacious cabins, impressive range, and advanced avionics. Typically
+                        accommodating 8 to 12 passengers, they balance the large cabin space of heavy jets with the efficiency of midsize models. Luxurious
+                        amenities include full lavatories, Wi-Fi, and comfortable seating. With ranges up to 4,000 nautical miles, they can fly nonstop between major
+                        cities, ideal for transcontinental and international travel.</p>
+                    <h4>Aeropartner’s Super Midsize fleet</h4>
+                </div>
+                <div class="tab-content ">
+                    <img src="images/tab-img.png" alt="tab">
+                    <h4>Super Midsize</h4>
+                    <p>Super midsize private jets are business aircraft known for spacious cabins, impressive range, and advanced avionics. Typically
+                        accommodating 8 to 12 passengers, they balance the large cabin space of heavy jets with the efficiency of midsize models. Luxurious
+                        amenities include full lavatories, Wi-Fi, and comfortable seating. With ranges up to 4,000 nautical miles, they can fly nonstop between major
+                        cities, ideal for transcontinental and international travel.</p>
+                    <h4>Aeropartner’s Super Midsize fleet</h4>
+                </div>
+                <div class="tab-content ">
+                    <img src="images/tab-img.png" alt="tab">
+                    <h4>Super Midsize</h4>
+                    <p>Super midsize private jets are business aircraft known for spacious cabins, impressive range, and advanced avionics. Typically
+                        accommodating 8 to 12 passengers, they balance the large cabin space of heavy jets with the efficiency of midsize models. Luxurious
+                        amenities include full lavatories, Wi-Fi, and comfortable seating. With ranges up to 4,000 nautical miles, they can fly nonstop between major
+                        cities, ideal for transcontinental and international travel.</p>
+                    <h4>Aeropartner’s Super Midsize fleet</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ceo to-city">
+        <div class="ceo-info d-flex">
+            <div>
+                <h1>Your trip from Paris</h1>
+            </div>
+            <div>
+                <p>N — SEO text that adds uniqueness. This section is only displayed if any text has been
+                    added through the CMS. N — SEO text that adds uniqueness. This section is only
+                    displayed if any text has been added through the CMS. N — SEO text that adds
+                    uniqueness. This section is only displayed if any text has been added through the CMS. N
+                    — SEO text that adds uniqueness. This section is only displayed if any text has been
+                    added through the CMS.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="airport airport-city airport-to-city">
+
+        <div class="airport-info city-from d-flex">
+            <div class="airport-info-left">
+                <h2 class="airport-city-title">Top Destinations in
+                    France</h2>
+                <h2>London</h2>
+                <h2>Edinburgh</h2>
+                <h2>Manchester</h2>
+                <h2>Glasgow</h2>
+                <h2>Birmingham</h2>
+
+            </div>
+            <div class="airport-info-right">
+
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <h1>Support from our concierge service</h1>
+        <p>whether you're making inquiries, booking flights, or seeking support</p>
+        <div class="gallery-list">
+            <div class="gallery-row d-flex">
+                <div class="gallery-item">
+                    <div class="gallery-title">Transfer</div>
+                    <img src="images/g1.png" alt="gallery">
+                </div>
+                <div class="gallery-item-large">
+                    <div class="gallery-title">Helicopter</div>
+
+                    <img src="images/g2.png" alt="gallery">
+                </div>
+            </div>
+            <div class="gallery-row d-flex">
+                <div class="gallery-item-large">
+                    <div class="gallery-title text-dark">Chalet</div>
+
+                    <img src="images/g3.png" alt="gallery">
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-title">Yacht</div>
+
+                    <img src="images/g4.png" alt="gallery">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ceo ceo-city">
+        <div class="ceo-info d-flex">
+            <div>
+                <h1>Empty Legs from Paris</h1>
+                <p>N — SEO text that adds uniqueness. This section is only displayed if any text has been
+                    added through the CMS. N — SEO text that adds uniqueness. This section is only
+                    displayed if any text has been added through the CMS. N — SEO text that adds
+                    uniqueness. This section is only displayed if any text has been added through the CMS. N
+                    — SEO text that adds uniqueness. This section is only displayed if any text has been
+                    added through the CMS.</p>
+                <button class="btn btn-orange">Request Timetable</button>
+            </div>
+            <div>
+                <img src="images/empty-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="ceo">
+        <div class="ceo-info d-flex">
+            <div>
+                <h1>Your flight to Paris</h1>
+
+
+            </div>
+            <div>
+                <p>N — SEO text that adds uniqueness. This section is only displayed if any text has been
+                    added through the CMS. N — SEO text that adds uniqueness. This section is only
+                    displayed if any text has been added through the CMS. N — SEO text that adds
+                    uniqueness. This section is only displayed if any text has been added through the CMS. N
+                    — SEO text that adds uniqueness. This section is only displayed if any text has been
+                    added through the CMS.</p>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <h1 class="faq-title">FAQ</h1>
+        <div class="faq-content faq-not-found">No items found.</div>
+    </section>
+    <section class="contact-us">
+        <div class="contact-content">
+            <h1>Leave your contact info,
+                we’ll get in touch.</h1>
+            <img src="images/ceo.png" alt="ceo">
+            <h4>Thomas Smith</h4>
+            <p>Sales Executive</p>
+            <div class="contact-actions d-flex">
+                <a href=""  class="d-flex a-center"><img src="images/whatsapp.svg" alt="whatsapp"></a>
+                <a href=""  class="d-flex a-center"><img src="images/email.svg" alt="email"></a>
+                <a href="tel:+971 800 0311 01 13" class="d-flex a-center"><img src="images/tel.svg" alt="tel">+971 800 0311 01 13</a>
+            </div>
+            <div class="contact-action-btns">
+                <button class="btn btn-orange">Request Quote</button>
+
+                <button class="btn btn-orange-outline">Request Call Back</button>
+            </div>
+
+        </div>
+
+    </section>
+</main>
+<footer>
+    <div class="footer-top d-flex">
+        <div class="footer-col">
+            <a href="index.html" class="footer-logo">
+                <img src="images/footer-logo.svg" alt="logo">
+            </a>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Aeropartner</h4>
+            <ul class="footer-menu">
+                <li class="footer-menu-item">
+                    <a href="">Home</a>
+                </li>
+                <li class="footer-menu-item">
+                    <a href="">Private Jet Charter</a>
+                </li>
+                <li class="footer-menu-item">
+                    <a href="">Private Jets for Sale</a>
+                </li>
+                <li class="footer-menu-item">
+                    <a href="">Concierge</a>
+                </li>
+                <li class="footer-menu-item">
+                    <a href="">About</a>
+                </li>
+                <li class="footer-menu-item">
+                    <a href="">Blog</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Payment methods</h4>
+            <div class="payment-methods ">
+                <img src="images/payments/p1.svg" alt="">
+                <img src="images/payments/p2.svg" alt=""><br>
+                <img src="images/payments/p3.svg" alt="">
+                <img src="images/payments/p4.svg" alt=""><br>
+                <img src="images/payments/p5.svg" alt="">
+                <img src="images/payments/p6.svg" alt=""><br>
+                <img src="images/payments/p7.svg" alt="">
+                <img src="images/payments/p8.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Contacts</h4>
+            <a class="footer-tel" href="tel:+971 800 0311 01 13">+971 800 0311 01 13</a>
+            <a class="footer-email" href="mailto:info@aeropartner.ae">info@aeropartner.ae</a>
+            <div class="socials d-flex">
+                <a href=""> <img src="images/insta.svg" alt="instagram"></a>
+                <a href=""> <img src="images/ln.svg" alt="linkedin"></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-bottom d-flex">
+        <div class="footer-col">
+            <h6>UAE</h6>
+            <p>B01-G40, Service Block</p>
+            <p>Al Hulaila Industrial Zone FZ</p>
+            <p>RAK, United Arab Emirates</p>
+        </div>
+        <div class="footer-col">
+            <h6>Dubai</h6>
+            <p>B01-G40, Service Block</p>
+            <p>Al Hulaila Industrial Zone FZ</p>
+            <p>RAK, United Arab Emirates</p>
+        </div>
+        <div class="footer-col">
+            <h6>Austria Representative Office</h6>
+            <p>B01-G40, Service Block</p>
+            <p>Al Hulaila Industrial Zone FZ</p>
+            <p>RAK, United Arab Emirates</p>
+        </div>
+        <div class="footer-col">
+            <h6>UK Representative Office</h6>
+            <p>B01-G40, Service Block</p>
+            <p>Al Hulaila Industrial Zone FZ</p>
+            <p>RAK, United Arab Emirates</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Aeropartner® acts as an intermediary for arranging charter flights between customers and FAA certified Part 135 air carriers. However, it's important to note that Aeropartner® is not a direct air carrier and does not conduct aircraft operations.</p>
+        <a href="">Terms and Conditions</a>
+        <a href="">Privacy Policy</a>
+        <p>Aeropartner® (2024). All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
