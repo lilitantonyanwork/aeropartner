@@ -1,3 +1,18 @@
+@media screen and (min-width: 1441px){
+    main{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    header{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    footer{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+}
 @media screen and (max-width: 1300px){
     .header-logo img{
         max-width: 300px;
