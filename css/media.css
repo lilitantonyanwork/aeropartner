@@ -308,6 +308,13 @@
 
 }
 @media screen and (max-width: 480px){
+    .ceo-city .btn-orange{
+        height: 45px;
+        font-size: 14px;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
     .search-item-img{
         height: 167px;
     }
