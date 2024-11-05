@@ -139,7 +139,7 @@ header{
 }
 .search-form{
     background: #2A2A2A;
-    padding: 8px;
+    padding: 8px 8.4px 8px 8.4px;
 }
 .lang-select{
     width: 64px;
@@ -163,12 +163,13 @@ header{
 .search-form form{
     width: 100%;
    flex-wrap: wrap;
+    justify-content: flex-end;
 
 }
 .text-input, .text-input:disabled{
     width: 308px;
     height: 34px;
-    padding: 8px 8px 8px 31px;
+    padding: 8px 8.4px 8px 31px;
     color: #BAB6B6;
     font-size: 14px;
     line-height: 16px;
@@ -176,8 +177,8 @@ header{
     font-family: 'Helvetica',sans-serif;
     margin-right: 8.4px;
     background: #FFFFFF;
-    border: none;
     margin-bottom: 8px;
+    border: 1px solid #F4F4F4
 }
 #datepicker, .adult-info{
     width: 208px;
@@ -189,13 +190,13 @@ header{
     font-weight: 400;
     font-family: 'Helvetica',sans-serif;
     background: #FFFFFF;
-    border: none;
     margin-bottom: 8px;
+    border: 1px solid #F4F4F4
 
 }
 #datepicker{
-    border-right: 1px solid #F4F4F4;
     color: #404040;
+    border: 1px solid #F4F4F4
 }
 .adult-info{
     text-align: center;
@@ -924,4 +925,7 @@ select {
     background-repeat: no-repeat;
     background-position-x: 45px;
     background-position-y: center;
+}
+.mb-10{
+    margin-bottom: 10px!important;
 }
